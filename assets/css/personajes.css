@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+body {
+  background-color: rgb(238, 184, 104);
+  font-family: "Bangers", system-ui;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative; /* Necesario para el menú desplegable */
+}
+
+button {
+  background-color: #f08228;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 200px;
+  height: 30px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.emergencia {
+  width: 200px;
+  margin-left: 2px;
+}
+
+.clanes {
+  background-color: #944927;
+}
+
+/* Estilos para el menú de clanes */
+.clanes-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.clanes-menu li {
+  margin: 0;
+}
+
+.clanes-menu li button {
+  width: 100%;
+  background-color: #f08228;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.clanes-menu li button:hover {
+  background-color: #ec8531;
+}
+
+.aldeas-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.aldeas-menu li {
+  margin: 0;
+}
+
+.aldeas-menu li button {
+  width: 100%;
+  background-color: #f08228;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.aldeas-menu li button:hover {
+  background-color: #ec8531;
+}
+
+.nav-list li:hover .aldeas-menu {
+  display: block;
+}
+
+/* Mostrar el menú de clanes al pasar el cursor sobre el botón "Clanes" */
+.nav-list li:hover .clanes-menu {
+  display: block;
+}
+
+header {
+  padding-block: 1rem;
+  box-shadow: 0 0 2rem -1rem rgb(0, 0, 0);
+}
+
+main {
+  padding: 2rem;
+}
+
+#card {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ficha {
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: 0 0 3rem -1rem rgb(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  height: 320px;
+  padding: 12px;
+  text-align: center;
+}
+
+.personaje-imagen {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 130px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.personaje-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: center;
+  text-align: center;
+}
+
+.datos-container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.nombre {
+  font-size: 1.4rem;
+  margin: 10px auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.debut,
+.jutsu {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.genero {
+  background-color: #ec8531;
+  border-radius: 30px;
+  width: 70px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.btn-int {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+a.tarjeta-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.tarjeta-link:hover {
+  color: #a32121;
+}
